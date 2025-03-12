@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picositos AZ | Home of Dulces Enchilados</title>
+    <meta name="author" content="Araceli Valles">
+    <meta name="description" content="Final project creating a website for Picositos AZ, a small business specializing in dulces enchilados.">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dulces.html">Nuestros Dulces</a></li>
+                <li><a href="contact.html">Contact & FAQ</a></li>
+                <li><a href="cart.html" class="cart-link">🛒 Cart</a></li>
+            </ul>
+         </nav>  
+    </header>
+
+    <main>
+        <h1>Shopping Cart</h1>
+        <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+        <table>
+            <thead>
+                <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Size</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+                <th scope="col">Subtotal</th>
+                <th scope="col">Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dulces Enchilados</td>
+                    <td>
+                        <select name="size">
+                        <option value="mini">Mini</option>
+                        <option value="container">Container</option>
+                        <option value="bag">Bag</option>
+                    </select>
+                    </td>
+                    <td>
+                        <input type="number" name="quantity" value="1" min="1">
+                        <td>$8</td>
+                        <td>$8</td>
+                        <td><button type="button">❌</button></td>
+                    </td> 
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2025 Picositos AZ. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+        <a href="https://www.instagram.com/picositosaz/" target="_blank" aria-label="Follow us on Instagram">📷 Follow us on Instagram</a>
+    </footer>
+</body>
+</html>
