@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+    <a href="#main" id="skip">Skip to Main Content</a>
+    
     <header>
         <nav class="navigation-bar">
             <img class="logo" src="images/Picositos.png">
@@ -23,7 +25,7 @@
    
     <main>
         <section id="hero-banner">
-            <h1>Welcome to Picositos AZ</h1>
+            <h1>Welcome to</h1>
             <p></p>
         </section>
         <section id="featured-products">
@@ -33,19 +35,48 @@
                     <img class="candies" src="images/gushers.png">
                     <h3>Gushers</h3>
                     <p>A spicy and tangy twist on your favorite juicy-filled bites. A perfect mix of sweetness and heat!</p>
-                    <button>Add to Cart</button>
+
+                    <label for="size-gushers">Size:</label>
+                    <select id="size-gushers" name="size">
+                        <option value="mini">Mini</option>
+                        <option value="container">Container</option>
+                        <option value="bag">Bag</option>
+                    </select>
+
+                    <label for="quantity-gushers">Quantity:</label>
+                    <input type="number" id="quantity-gushers" name="quantity" min="1" value="1">
+                    <button type="submit">Add to Cart</button>
                 </article>
                 <article class="product2">
                     <img class="candies" src="images/skittles.png">
                     <h3>Skittles</h3>
                     <p>Taste the rainbow… with a kick! These chewy classics get a bold, spicy upgrade.</p>
-                    <button>Add to Cart</button>
+
+                    <label for="size-skittles">Size:</label>
+                    <select id="size-skittles" name="size">
+                        <option value="mini">Mini</option>
+                        <option value="container">Container</option>
+                        <option value="bag">Bag</option>
+                    </select>
+
+                    <label for="quantity-skittles">Quantity:</label>
+                    <input type="number" id="quantity-skittles" name="quantity" min="1" value="1">
+                    <button type="submit">Add to Cart</button>
                 </article>
                 <article class="product3">
                     <img class="candies" src="images/airheadExtreme.png">
-                    <h3>Airhead Extreme Belts</h3>
-                    <p>Sweet, sour, and spicy all in one! These rainbow belts bring the perfect balance of tang and heat.</p>
-                    <button>Add to Cart</button>
+                    <h3>Airhead Xtremes</h3>
+                    <p>A chewy, fruity, and spicy explosion in every bite. Sweet, sour, and tangy fun!</p>
+                    <label for="size-airheadExtreme">Size:</label>
+                    <select id="size-airheadExtreme" name="size">
+                        <option value="mini">Mini</option>
+                        <option value="container">Container</option>
+                        <option value="bag">Bag</option>
+                    </select>
+
+                    <label for="quantity-airheadExtreme">Quantity:</label>
+                    <input type="number" id="quantity-airheadExtreme" name="quantity" min="1" value="1">
+                    <button type="submit">Add to Cart</button>
                 </article>
             </div>
             <a href="dulces.html" class="view-all">View All Our Dulces</a>

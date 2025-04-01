@@ -1,8 +1,58 @@
 /* CSS by Araceli Valles */
+/* ---- Skip Link Styles ---- */
+#skip{
+    position: absolute;
+    left: -100000px;    
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#skip:focus{
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+/* Nav Styles */
 .logo{
     width: 270px;
 }
 
+.navigation-bar ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.navigation-bar a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    
+}
+
+/* Hero Banner Styles */
+#hero-banner{
+    background-image: url(images/Picositos\ AZ.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px 20px;
+    min-height: 300px;
+    border-radius: 0.5rem; 
+}
+
+/*h1{
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+} */
+
+
+/* Products */
 .candies{
     width: 350px;
 }
