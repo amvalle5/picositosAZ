@@ -15,27 +15,39 @@
     height: auto;
 }
 
-/* Nav Styles */
+/* Logo */
 .logo{
-    width: 270px;
+    width: 250px;
+    height: auto;
 }
 
+/* Nav Styles */
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
 .navigation-bar ul {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation-bar a{
+    color: #000000;
     text-decoration: none;
-    color: #000;
     font-weight: bold;
-    
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
 }
+
 
 /* Hero Banner Styles */
 #hero-banner{
-    background-image: url(images/Picositos\ AZ.png);
+    background-image: url(images/PicositosAZ.png);
     background-size: cover;
     background-position: center;
     text-align: center;
