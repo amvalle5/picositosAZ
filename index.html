@@ -25,8 +25,11 @@
    
     <main>
         <section id="hero-banner">
-            <h1>Welcome to</h1>
-            <p></p>
+            <div class="hero-text">
+                <h1>Welcome!</h1>
+                <p>Handcrafted dulces enchilados made fresh with premium ingredients. Local pickup, delivery, and shipping available!</p>
+                <p>Sweet, spicy, and made with love — the way dulces enchilados should be.</p>
+            </div>
         </section>
         <section id="featured-products">
             <h2>Popular Dulces</h2>
@@ -35,48 +38,52 @@
                     <img class="candies" src="images/gushers.png">
                     <h3>Gushers</h3>
                     <p>A spicy and tangy twist on your favorite juicy-filled bites. A perfect mix of sweetness and heat!</p>
+                    <div class="product-footer">
+                        <label for="size-gushers">Size:</label>
+                        <select id="size-gushers" name="size">
+                            <option value="mini">Mini</option>
+                            <option value="container">Container</option>
+                            <option value="bag">Bag</option>
+                        </select>
 
-                    <label for="size-gushers">Size:</label>
-                    <select id="size-gushers" name="size">
-                        <option value="mini">Mini</option>
-                        <option value="container">Container</option>
-                        <option value="bag">Bag</option>
-                    </select>
-
-                    <label for="quantity-gushers">Quantity:</label>
-                    <input type="number" id="quantity-gushers" name="quantity" min="1" value="1">
-                    <button type="submit">Add to Cart</button>
+                        <label for="quantity-gushers">Quantity:</label>
+                        <input type="number" id="quantity-gushers" name="quantity" min="1" value="1">
+                        <button type="submit">Add to Cart</button>
+                    </div>
                 </article>
-                <article class="product2">
+                <article class="product">
                     <img class="candies" src="images/skittles.png">
                     <h3>Skittles</h3>
                     <p>Taste the rainbow… with a kick! These chewy classics get a bold, spicy upgrade.</p>
+                    <div class="product-footer">
+                        <label for="size-skittles">Size:</label>
+                        <select id="size-skittles" name="size">
+                            <option value="mini">Mini</option>
+                            <option value="container">Container</option>
+                            <option value="bag">Bag</option>
+                        </select>
 
-                    <label for="size-skittles">Size:</label>
-                    <select id="size-skittles" name="size">
-                        <option value="mini">Mini</option>
-                        <option value="container">Container</option>
-                        <option value="bag">Bag</option>
-                    </select>
-
-                    <label for="quantity-skittles">Quantity:</label>
-                    <input type="number" id="quantity-skittles" name="quantity" min="1" value="1">
-                    <button type="submit">Add to Cart</button>
+                        <label for="quantity-skittles">Quantity:</label>
+                        <input type="number" id="quantity-skittles" name="quantity" min="1" value="1">
+                        <button type="submit">Add to Cart</button>
+                    </div>
                 </article>
-                <article class="product3">
+                <article class="product">
                     <img class="candies" src="images/airheadExtreme.png">
                     <h3>Airhead Xtremes</h3>
                     <p>A chewy, fruity, and spicy explosion in every bite. Sweet, sour, and tangy fun!</p>
-                    <label for="size-airheadExtreme">Size:</label>
-                    <select id="size-airheadExtreme" name="size">
-                        <option value="mini">Mini</option>
-                        <option value="container">Container</option>
-                        <option value="bag">Bag</option>
-                    </select>
+                    <div class="product-footer">
+                        <label for="size-airheadExtreme">Size:</label>
+                        <select id="size-airheadExtreme" name="size">
+                            <option value="mini">Mini</option>
+                            <option value="container">Container</option>
+                            <option value="bag">Bag</option>
+                        </select>
 
-                    <label for="quantity-airheadExtreme">Quantity:</label>
-                    <input type="number" id="quantity-airheadExtreme" name="quantity" min="1" value="1">
-                    <button type="submit">Add to Cart</button>
+                        <label for="quantity-airheadExtreme">Quantity:</label>
+                        <input type="number" id="quantity-airheadExtreme" name="quantity" min="1" value="1">
+                        <button type="submit">Add to Cart</button>
+                    </div>
                 </article>
             </div>
             <a href="dulces.html" class="view-all">View All Our Dulces</a>
