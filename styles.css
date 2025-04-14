@@ -212,3 +212,23 @@ body, nav, p{
     margin-top: 1rem;
     color: #fff;
 }
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.footer-content .logo{
+    display: block;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+footer ul {
+    list-style-type: none;
+}
