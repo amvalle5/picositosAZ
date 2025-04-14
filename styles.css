@@ -59,11 +59,15 @@ header, footer {
     background-image: url(images/PicositosAZ.png);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
     text-align: center;
-    padding: 50px 20px;
-    min-height: 300px;
-    border-radius: 0.5rem;
-    margin-top: .02rem; 
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 
