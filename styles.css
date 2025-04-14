@@ -15,6 +15,16 @@
     height: auto;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+header, footer {
+    background-color: #fd5588;
+}
+
 /* Logo */
 .logo{
     width: 250px;
@@ -44,7 +54,6 @@
     transition: color 0.3s ease;
 }
 
-
 /* Hero Banner Styles */
 #hero-banner{
     background-image: url(images/PicositosAZ.png);
@@ -53,7 +62,13 @@
     text-align: center;
     padding: 50px 20px;
     min-height: 300px;
-    border-radius: 0.5rem; 
+    border-radius: 0.5rem;
+    margin-top: .02rem; 
+}
+
+
+#hero-banner .hero-text {
+    visibility: hidden;
 }
 
 /*h1{
@@ -63,10 +78,15 @@
     font-size: 50px;
 } */
 
-#hero-banner .hero-text {
-    visibility: hidden;
+h2,h3 {
+    font-family: 'Shrikhand', cursive, sans-serif;
+    font-size: 50px;
 }
 
+body, nav, p{
+    font-family: 'Raleway', sans-serif;
+
+}
 
 /* Products */
 #featured-products{
@@ -85,7 +105,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    background-color: hotpink;
+    background-color: #fff;
     border-radius: 12px;
     padding: 1rem;
     text-align: left;
@@ -102,7 +122,7 @@
 }
 
 .product-grid h3 {
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -118,7 +138,7 @@
 }
 
 .product-grid button {
-    background-color: #000;
+    background-color: #69a286;
     color: #fff;
     border: none;
     padding: 0.5rem;
