@@ -47,7 +47,7 @@ header, footer {
 }
 
 .navigation-bar a{
-    color: #000000;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.3rem;
@@ -87,6 +87,7 @@ h2,h3 {
     font-size: 50px;
 }
 
+
 body, nav, p{
     font-family: 'Raleway', sans-serif;
 
@@ -114,6 +115,16 @@ body, nav, p{
     padding: 1rem;
     text-align: left;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#featured-products h2{
+    padding: 15px;
+    color: #ff004c;
+}
+
+.product p{
+   font-weight: 250;
+   padding-top: 15px;
 }
 
 .product-grid img.candies {
@@ -161,5 +172,43 @@ body, nav, p{
 }
 
 .view-all{
+    display: inline-block;
     text-decoration: none;
+    padding: 12px 24px;
+    margin-top: 20px;
+    background-color: #69a286;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+/* Testimonals */
+
+#testimonials h2{
+    text-align: center;
+    color: #ff004c;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 20px;
+}
+
+.testimonial {
+    background-color: #69a286;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgb(0, 0, 0);
+    font-style: italic;
+}
+
+.testimonial span {
+    display: block;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 1rem;
+    color: #fff;
 }
