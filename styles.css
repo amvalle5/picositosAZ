@@ -94,12 +94,12 @@ body, nav, p{
 }
 
 /* Products */
-#featured-products{
+#featured-products, .dulceProducts{
     padding: 2rem;
     text-align: center;
 }
 
-.product-grid{
+.product-grid, .dulceProducts{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
     gap: 2rem;
@@ -117,7 +117,7 @@ body, nav, p{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-#featured-products h2{
+#featured-products h2, #products h2{
     padding: 15px;
     color: #ff004c;
 }
@@ -126,7 +126,7 @@ body, nav, p{
    padding-top: 15px;
 }
 
-.product-grid img.candies {
+.product-grid img.candies, .dulceProducts img {
     max-width: 350px;
     width: 100%;
     height: auto;
@@ -135,13 +135,13 @@ body, nav, p{
     display: block;
 }
 
-.product-grid h3 {
+.product-grid h3, .dulceProducts h3 {
     font-size: 30px;
     text-align: center;
     color: #ff004c;
 }
 
-.product-grid p {
+.product-grid p, .dulceProducts p {
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -152,7 +152,7 @@ body, nav, p{
     margin: 0.4rem 0;
 }
 
-.product-grid button {
+.product-grid button, .dulceProducts button {
     background-color: #69a286;
     color: #fff;
     border: none;
