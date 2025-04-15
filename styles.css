@@ -123,7 +123,6 @@ body, nav, p{
 }
 
 .product p{
-   font-weight: 250;
    padding-top: 15px;
 }
 
@@ -137,8 +136,9 @@ body, nav, p{
 }
 
 .product-grid h3 {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
+    color: #ff004c;
 }
 
 .product-grid p {
@@ -176,7 +176,7 @@ body, nav, p{
     text-decoration: none;
     padding: 12px 24px;
     margin-top: 20px;
-    background-color: #69a286;
+    background-color: #ff004c;
     color: #fff;
     border-radius: 0.5rem;
     font-weight: bold;
@@ -213,28 +213,70 @@ body, nav, p{
     color: #fff;
 }
 
+/* Footer Styles */
 footer {
     margin-top: 50px;
-    text-align: center;
     padding: 2rem 1rem;
+    color: #fff;
+} 
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.footer-content .logo{
-    display: block;
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1;
 }
 
-footer p{
-    text-align: left;
+.footer-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    text-align: right;
+    margin-top: 100px;
+}
+ 
 footer a {
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
 }
 
 footer ul {
     list-style-type: none;
     text-align: right;
+}
 
+footer ul li {
+    text-align: center;
+    margin-top: 50px;
+}
+
+ #size-gushers, #size-skittles, #size-airheadExtreme, #quantity-gushers, #quantity-skittles, #quantity-airheadExtreme{
+    color: #ff004c;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: 16px;
 }
