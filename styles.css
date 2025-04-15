@@ -71,7 +71,7 @@ header, footer {
 }
 
 
-#hero-banner .hero-text {
+#hero-banner .hero-text, h1, #hero-banner2 p {
     visibility: hidden;
 }
 
