@@ -120,6 +120,7 @@ body, nav, p{
 #featured-products h2, #products h2{
     padding: 15px;
     color: #ff004c;
+    text-align: center;
 }
 
 .product p{
@@ -127,9 +128,8 @@ body, nav, p{
 }
 
 .product-grid img.candies, .dulceProducts img {
-    max-width: 350px;
     width: 100%;
-    height: auto;
+    height: 350px;
     border-radius: 8px;
     margin: 0 auto 0.5rem;
     display: block;
