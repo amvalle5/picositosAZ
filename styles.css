@@ -71,7 +71,7 @@ header, footer {
 }
 
 
-#hero-banner .hero-text, h1, #hero-banner2 p {
+#hero-banner .hero-text, h1, #hero-banner p {
     visibility: hidden;
 }
 
@@ -137,7 +137,7 @@ body, nav, p{
 }
 
 .product-grid h3, .dulceProducts h3 {
-    font-size: 30px;
+    font-size: 23px;
     text-align: center;
     color: #ff004c;
 }
@@ -184,7 +184,6 @@ body, nav, p{
 }
 
 /* Testimonals */
-
 #testimonials h2{
     text-align: center;
     color: #ff004c;
@@ -269,7 +268,7 @@ footer ul li {
     margin-top: 50px;
 }
 
- #size-gushers, #size-skittles, #size-airheadExtreme, #quantity-gushers, #quantity-skittles, #quantity-airheadExtreme{
+ #size-gushers, #quantity-gushers, #size-skittles, #quantity-skittles, #size-airheadExtreme,  #quantity-airheadExtreme, #size-peachRings, #quantity-peachRings, #size-nerdClusters, #quantity-nerdClusters, #size-spicyManguitos, #quantity-spicyManguitos, #size-gummyFresitas, #quantity-gummyFresitas, #size-sourPunchStraws, #quantity-sourPunchStraws, #size-gummyWorms, #quantity-gummyWorms, #size-sourPatchWatermelons, #quantity-sourPatchWatermelons, #size-sourCherries, #quantity-sourCherries {
     color: #ff004c;
     padding: 10px;
     font-size: 16px;
