@@ -70,27 +70,34 @@ header, footer {
     box-sizing: border-box;
 }
 
-
-#hero-banner .hero-text, h1, #hero-banner p {
-    visibility: hidden;
+h1{
+    margin-top: 25px;
+    font-size: 60px;
+    text-decoration: solid;
 }
 
-/*h1{
-    margin: auto;
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-} */
+h2{
+    font-size: 40px;
+}
 
-h2,h3 {
+h3{
+    font-size: 30px;
+}
+
+h1,h2,h3 {
     font-family: 'Shrikhand', cursive, sans-serif;
-    font-size: 50px;
+    color: #ff004c;
+    text-align: center;
 }
 
+.hero-text p{
+    text-align: center;
+    margin: 20px;
+    font-weight: 450;
+}
 
 body, nav, p{
     font-family: 'Raleway', sans-serif;
-
 }
 
 /* Products */
@@ -120,8 +127,6 @@ body, nav, p{
 
 #featured-products h2, #products h2{
     padding: 15px;
-    color: #ff004c;
-    text-align: center;
 }
 
 .product p{
@@ -279,4 +284,57 @@ footer ul li {
 label {
     font-weight: bold;
     font-size: 16px;
+}
+
+/* Contact Page Styles*/
+.faq-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #69a286;
+    box-shadow: 0 4px 6px ;
+}
+
+.faq-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.faq-item{
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-question:focus{
+    outline: none;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.faq-answer{
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.faq-question.active .icon {
+    content: "-";
 }
