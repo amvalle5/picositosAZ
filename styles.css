@@ -54,6 +54,10 @@ header, footer {
     transition: color 0.3s ease;
 }
 
+.navigation-bar a:hover{
+    color: #000;
+}
+
 /* Hero Banner Styles */
 #hero-banner{
     background-image: url(images/PicositosAZ.png);

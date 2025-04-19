@@ -6,10 +6,19 @@
     <title>Picositos AZ | Home of Dulces Enchilados</title>
     <meta name="author" content="Araceli Valles">
     <meta name="description" content="Final project creating a website for Picositos AZ, a small business specializing in dulces enchilados.">
+    <!--Custom Styles-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--Font Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#main" id="skip">Skip to Main Content</a>
+    
     <header>
         <nav class="navigation-bar">
+            <img class="logo" src="images/Picositos.png">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="dulces.html">Nuestros Dulces</a></li>
@@ -55,15 +64,24 @@
         </form>
     </main>
     <footer>
-        <p>&copy; 2025 Picositos AZ. All rights reserved.</p>
-        <nav>
-            <ul>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-            </ul>
-        </nav>
-        <a href="https://www.instagram.com/picositosaz/" target="_blank" aria-label="Follow us on Instagram">📷 Follow us on Instagram</a>
+        <div class="footer-content">
+            <div class="footer-left">
+                <img class="logo" src="images/Picositos.png">
+                <p>&copy; 2025 Picositos AZ. All rights reserved.</p>
+            </div>
+            <div class="footer-center">
+                <nav>   
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.instagram.com/picositosaz/" target="_blank" aria-label="Follow us on Instagram">📷 Follow us on Instagram</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
