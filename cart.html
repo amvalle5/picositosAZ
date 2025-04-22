@@ -29,40 +29,54 @@
     </header>
 
     <main>
-        <h1>Shopping Cart</h1>
-        <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
-        <table>
-            <thead>
-                <tr>
-                <th scope="col">Item</th>
-                <th scope="col">Size</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Price</th>
-                <th scope="col">Subtotal</th>
-                <th scope="col">Remove</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Dulces Enchilados</td>
-                    <td>
-                        <select name="size">
-                            <option value="mini">Mini</option>
-                            <option value="container">Container</option>
-                            <option value="bag">Bag</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input type="number" name="quantity" value="1" min="1">
-                    </td>    
-                        <td>$8</td>
-                        <td>$8</td>
-                        <td><button type="button">❌</button></td>
-                </tr>
-            </tbody>
-        </table>
-        </form>
-    </main>
+        <main>
+            <h1>Shopping Cart</h1>
+        
+            <!-- Empty Cart Message -->
+            <div id="empty-cart" class="empty-cart">
+                <p>Your cart is currently empty.</p>
+                <a href="dulces.html" class="continue-shopping">Continue Shopping</a>
+            </div>            
+        
+            <!-- Cart Table (hidden by default) -->
+            <div id="cart-container" class="hidden">
+            <form id="cart-table" action="https://wp.zybooks.com/form-viewer.php" method="POST" >
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Item</th>
+                            <th scope="col">Size</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Subtotal</th>
+                            <th scope="col">Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dulces Enchilados</td>
+                            <td>
+                                <select name="size" class="size-select">
+                                    <option value="mini" data-price="1.50">Mini</option>
+                                    <option value="container" data-price="8.00" selected>Container</option>
+                                    <option value="bag" data-price="15.00">Bag</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="number" name="quantity" class="quantity-input" value="1" min="1">
+                            </td>
+                            <td class="price">$8.00</td>
+                            <td class="subtotal">$8.00</td>
+                            <td><button type="button">❌</button></td>
+                        </tr>
+                    </tbody>
+                </table>              
+                <div class="cart-actions">
+                    <button type="submit">Checkout</button>
+                </div>
+            </form>
+            </div>
+         </main>
     <footer>
         <div class="footer-content">
             <div class="footer-left">
