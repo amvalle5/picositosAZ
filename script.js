@@ -18,12 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Cart Logic
+    // Empty Cart Display Logic
     const emptyCart = document.getElementById("empty-cart");
     const cartContainer = document.getElementById("cart-container");
     const cartItemsContainer = document.getElementById('cart-items');
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
+    // Check if the cart is empty and display accordingly
     if (cart.length === 0) {
         emptyCart.style.display = "block";
         if (cartContainer) cartContainer.classList.add("hidden");
@@ -31,29 +32,26 @@ document.addEventListener("DOMContentLoaded", () => {
         emptyCart.style.display = "none";
         if (cartContainer) cartContainer.classList.remove("hidden");
 
-        // Render items (basic version)
+        // Render items in the cart
         cart.forEach(item => {
-            if (cartItemsContainer) {
-                const productDiv = document.createElement('div');
-                productDiv.className = 'cart-item';
-                productDiv.innerHTML = `
-                    <h4>${item.name}</h4>
-                    <p>Size: ${item.size}</p>
-                    <p>Quantity: ${item.quantity}</p>
-                    <hr>
-                `;
-                cartItemsContainer.appendChild(productDiv);
-            }
+            const productDiv = document.createElement('div');
+            productDiv.className = 'cart-item';
+            productDiv.innerHTML = `
+                <h4>${item.name}</h4>
+                <p>Size: ${item.size}</p>
+                <p>Quantity: ${item.quantity}</p>
+                <hr>
+            `;
+            cartItemsContainer.appendChild(productDiv);
         });
     }
 
     // Add-to-cart button logic
-    document.querySelectorAll('.add-to-cart').forEach(button => {
+    document.querySelectorAll('.product button[type="submit"]').forEach(button => {
         button.addEventListener('click', () => {
-            const productName = button.dataset.product;
-            const article = button.closest('.product');
-            const size = article.querySelector('select[name="size"]').value;
-            const quantity = parseInt(article.querySelector('input[name="quantity"]').value);
+            const productName = button.closest('.product').querySelector('h3').innerText;
+            const size = button.closest('.product').querySelector('select[name="size"]').value;
+            const quantity = parseInt(button.closest('.product').querySelector('input[name="quantity"]').value);
 
             const item = {
                 name: productName,
@@ -61,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 quantity: quantity
             };
 
-            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            // Update cart in localStorage
             cart.push(item);
             localStorage.setItem('cart', JSON.stringify(cart));
 
