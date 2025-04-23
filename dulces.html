@@ -8,6 +8,8 @@
     <meta name="description" content="Final project creating a website for Picositos AZ, a small business specializing in dulces enchilados.">
     <!--Custom Styles-->
     <link rel="stylesheet" type="text/css" href="styles.css">
+     <!-- JavaScript -->
+     <script src="script.js" defer></script>
     <!--Font Links-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +49,7 @@
 
                     <label for="quantity-gushers">Quantity:</label>
                     <input type="number" id="quantity-gushers" name="quantity" min="1" value="1">
-                    <button type="submit">Add to Cart</button>
+                    <button class="add-to-cart" data-product="Gushers">Add to Cart</button>
                 </article>
                 <article class="product">
                     <img src="images/airheadExtreme.png">
@@ -63,7 +65,7 @@
 
                     <label for="quantity-airheadExtreme">Quantity:</label>
                     <input type="number" id="quantity-airheadExtreme" name="quantity" min="1" value="1">
-                    <button type="submit">Add to Cart</button>
+                    <button class="add-to-cart" data-product="airheadExtreme">Add to Cart</button>
                 </article>
                 <article class="product">
                     <img src="images/skittles.png">
@@ -79,7 +81,7 @@
 
                     <label for="quantity-skittles">Quantity:</label>
                     <input type="number" id="quantity-skittles" name="quantity" min="1" value="1">
-                    <button type="submit">Add to Cart</button>
+                    <button class="add-to-cart" data-product="Skittles">Add to Cart</button>
                 </article>
                 <article class="product">
                     <img src="images/peachRings.png">
@@ -95,7 +97,7 @@
 
                     <label for="quantity-peachRings">Quantity:</label>
                     <input type="number" id="quantity-peachRings" name="quantity" min="1" value="1">
-                    <button type="submit">Add to Cart</button>
+                    <button class="add-to-cart" data-product="peachRings">Add to Cart</button>
                 </article>
                 <article class="product">
                     <img src="images/nerdClusters.png">
@@ -111,7 +113,7 @@
 
                     <label for="quantity-nerdClusters">Quantity:</label>
                     <input type="number" id="quantity-nerdClusters" name="quantity" min="1" value="1">
-                    <button type="submit">Add to Cart</button>
+                    <button class="add-to-cart" data-product="nerdClusters">Add to Cart</button>
                 </article>
                 <article class="product">
                     <img src="images/spicyManguitos.png">
@@ -127,7 +129,7 @@
 
                     <label for="quantity-spicyManguitos">Quantity:</label>
                     <input type="number" id="quantity-spicyManguitos" name="quantity" min="1" value="1">
-                    <button type="submit">Add to Cart</button>
+                    <button class="add-to-cart" data-product="spicyManguitos">Add to Cart</button>
                 </article>
                 <article class="product">
                     <img src="images/gummyFresitas.png">
@@ -143,7 +145,7 @@
 
                     <label for="quantity-gummyFresitas">Quantity:</label>
                     <input type="number" id="quantity-gummyFresitas" name="quantity" min="1" value="1">
-                    <button type="submit">Add to Cart</button>
+                    <button class="add-to-cart" data-product="gummyFresitas">Add to Cart</button>
                 </article>
                 <article class="product">
                     <img src="images/sourPunchStraws.png">
@@ -159,7 +161,7 @@
 
                     <label for="quantity-sourPunchStraws">Quantity:</label>
                     <input type="number" id="quantity-sourPunchStraws" name="quantity" min="1" value="1">
-                    <button type="submit">Add to Cart</button>
+                    <button class="add-to-cart" data-product="sourPunchStraws">Add to Cart</button>
                 </article>
                 <article class="product">
                     <img src="images/gummyWorms.png">
@@ -175,7 +177,7 @@
 
                     <label for="quantity-gummyWorms">Quantity:</label>
                     <input type="number" id="quantity-gummyWorms" name="quantity" min="1" value="1">
-                    <button type="submit">Add to Cart</button>
+                    <button class="add-to-cart" data-product="gummyWorms">Add to Cart</button>
                 </article>
                 <article class="product">
                     <img src="images/sourPatchWatermelons.png">
@@ -191,7 +193,7 @@
 
                     <label for="quantity-sourPatchWatermelons">Quantity:</label>
                     <input type="number" id="quantity-sourPatchWatermelons" name="quantity" min="1" value="1">
-                    <button type="submit">Add to Cart</button>
+                    <button class="add-to-cart" data-product="sourPatchWatermelons">Add to Cart</button>
                 </article>
                 <article class="product">
                     <img src="images/sourCherries.png">
@@ -207,7 +209,7 @@
 
                     <label for="quantity-sourCherries">Quantity:</label>
                     <input type="number" id="quantity-sourCherries" name="quantity" min="1" value="1">
-                    <button type="submit">Add to Cart</button>
+                    <button class="add-to-cart" data-product="sourCherries">Add to Cart</button>
                 </article>
             </div>
         </section>

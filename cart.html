@@ -8,6 +8,8 @@
     <meta name="description" content="Final project creating a website for Picositos AZ, a small business specializing in dulces enchilados.">
     <!--Custom Styles-->
     <link rel="stylesheet" type="text/css" href="styles.css">
+     <!-- JavaScript -->
+     <script src="script.js" defer></script>
     <!--Font Links-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +31,6 @@
     </header>
 
     <main>
-        <main>
             <h1>Shopping Cart</h1>
         
             <!-- Empty Cart Message -->
@@ -38,6 +39,9 @@
                 <a href="dulces.html" class="continue-shopping">Continue Shopping</a>
             </div>            
         
+            <div id="cart-items"></div>
+
+
             <!-- Cart Table (hidden by default) -->
             <div id="cart-container" class="hidden">
             <form id="cart-table" action="https://wp.zybooks.com/form-viewer.php" method="POST" >
