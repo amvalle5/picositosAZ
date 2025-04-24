@@ -41,15 +41,15 @@
                     <p>A spicy and tangy twist on your favorite juicy-filled bites. A perfect mix of sweetness and heat!</p>
                     
                     <label for="size-gushers">Size:</label>
-                    <select id="size-gushers" name="size">
+                    <select id="size-gushers" name="size" class="size">
                         <option value="mini" data-price="1.50">Mini - $1.50</option>
                         <option value="container" data-price="8.00">Container - $8</option>
                         <option value="bag" data-price="15.00">Bag - $15</option>
                     </select>
 
                     <label for="quantity-gushers">Quantity:</label>
-                    <input type="number" id="quantity-gushers" name="quantity" min="1" value="1">
-                    <button class="add-to-cart" data-product="Gushers" type="button">Add to Cart</button>
+                    <input type="number" id="quantity-gushers" name="quantity" min="1" value="1" class="quantity">
+                    <button class="add-to-cart" data-product-id="gushers" data-product-name="Gushers" type="button">Add to Cart</button>
                 </article>
                 <article class="product">
                     <img src="images/airheadExtreme.png">
@@ -57,15 +57,15 @@
                     <p>A chewy, fruity, and spicy explosion in every bite. Sweet, sour, and tangy fun!</p>
                     
                     <label for="size-airheadExtreme">Size:</label>
-                    <select id="size-airheadExtreme" name="size">
+                    <select id="size-airheadExtreme" name="size" class="size">
                         <option value="mini" data-price="1.50">Mini - $1.50</option>
                         <option value="container" data-price="8.00">Container - $8</option>
                         <option value="bag" data-price="15.00">Bag - $15</option>
                     </select>
 
                     <label for="quantity-airheadExtreme">Quantity:</label>
-                    <input type="number" id="quantity-airheadExtreme" name="quantity" min="1" value="1">
-                    <button class="add-to-cart" data-product="airheadExtreme" type="button">Add to Cart</button>
+                    <input type="number" id="quantity-airheadExtreme" name="quantity" min="1" value="1" class="quantity">
+                    <button class="add-to-cart" data-product-id="airheadExtreme" data-product-name="airhead Extreme" type="button">Add to Cart</button>
                 </article>
                 <article class="product">
                     <img src="images/skittles.png">
@@ -73,15 +73,15 @@
                     <p>Taste the rainbow with a fiery kick! Sweet, sour, and spicy goodness in every handful.</p>
                     
                     <label for="size-skittles">Size:</label>
-                    <select id="size-skittles" name="size">
+                    <select id="size-skittles" name="size" class="size">
                         <option value="mini" data-price="1.50">Mini - $1.50</option>
                         <option value="container" data-price="8.00">Container - $8</option>
                         <option value="bag" data-price="15.00">Bag - $15</option>
                     </select>
 
                     <label for="quantity-skittles">Quantity:</label>
-                    <input type="number" id="quantity-skittles" name="quantity" min="1" value="1">
-                    <button class="add-to-cart" data-product="Skittles" type="button">Add to Cart</button>
+                    <input type="number" id="quantity-skittles" name="quantity" min="1" value="1" class="quantity">
+                    <button class="add-to-cart" data-product-id="skittles" data-product-name="Skittles" type="button">Add to Cart</button>
                 </article>
                 <article class="product">
                     <img src="images/peachRings.png">
@@ -89,15 +89,15 @@
                     <p>Juicy peach rings coated in our signature spicy mix—sweet, chewy, and irresistible!</p>
                     
                     <label for="size-peachRings">Size:</label>
-                    <select id="size-peachRings" name="size">
+                    <select id="size-peachRings" name="size" class="size">
                         <option value="mini" data-price="1.50">Mini - $1.50</option>
                         <option value="container" data-price="8.00">Container - $8</option>
                         <option value="bag" data-price="15.00">Bag - $15</option>
                     </select>
 
                     <label for="quantity-peachRings">Quantity:</label>
-                    <input type="number" id="quantity-peachRings" name="quantity" min="1" value="1">
-                    <button class="add-to-cart" data-product="peachRings" type="button">Add to Cart</button>
+                    <input type="number" id="quantity-peachRings" name="quantity" min="1" value="1" class="quantity">
+                    <button class="add-to-cart" data-product-id="peachRings" data-product-name="Peach Rings" type="button">Add to Cart</button>
                 </article>
                 <article class="product">
                     <img src="images/nerdClusters.png">
@@ -105,7 +105,7 @@
                     <p>Crunchy, chewy, and covered in tangy chamoy spice. The ultimate candy combo!</p>
                     
                     <label for="size-nerdClusters">Size:</label>
-                    <select id="size-nerdClusters" name="size">
+                    <select id="size-nerdClusters" name="size" class="size">
                         <option value="mini" data-price="1.50">Mini - $1.50</option>
                         <option value="container" data-price="8.00">Container - $8</option>
                         <option value="bag" data-price="15.00">Bag - $15</option>
@@ -153,15 +153,16 @@
                     <p>Sour, chewy, and spicy—each bite is a flavorful rollercoaster.</p>
                     
                     <label for="size-sourPunchStraws">Size:</label>
-                    <select id="size-sourPunchStraws" name="size">
+                    <select id="size-sourPunchStraws" name="size" class="size">
                         <option value="mini" data-price="1.50">Mini - $1.50</option>
                         <option value="container" data-price="8.00">Container - $8</option>
                         <option value="bag" data-price="15.00">Bag - $15</option>
                     </select>
 
                     <label for="quantity-sourPunchStraws">Quantity:</label>
-                    <input type="number" id="quantity-sourPunchStraws" name="quantity" min="1" value="1">
-                    <button class="add-to-cart" data-product="sourPunchStraws" type="button">Add to Cart</button>
+                    <input type="number" id="quantity-sourPunchStraws" name="quantity" min="1" value="1" class="quantity">
+                    <button class="add-to-cart" data-product-id="sourPunchStraws" data-product-name="Sour Punch Straws" 
+                    type="button">Add to Cart</button>
                 </article>
                 <article class="product">
                     <img src="images/gummyWorms.png">
