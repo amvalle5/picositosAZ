@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 
-  // Function to add an item to cart
+  // Cart Logic
   function addToCart(product) {
       let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -108,4 +108,35 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("cart", JSON.stringify(cart));
       location.reload(); // Refresh the page to update the cart
   }
+
+  // Add to Cart button logic
+  document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', function () {
+          const productId = this.getAttribute('data-product-id');
+          const sizeSelect = document.querySelector(`#size-${productId}`);
+          const quantityInput = document.querySelector(`#quantity-${productId}`);
+          
+          // Debugging log to check if the element exists
+          console.log(sizeSelect); 
+          console.log(quantityInput);
+          
+          // Ensure size is selected
+          if (sizeSelect && sizeSelect.selectedIndex !== -1) {
+              const selectedOption = sizeSelect.options[sizeSelect.selectedIndex];
+              const size = selectedOption.value;
+              const price = selectedOption.dataset.price;
+              const quantity = quantityInput ? quantityInput.value : 1;
+
+              // Proceed to add to cart
+              addToCart({
+                  name: this.getAttribute('data-product-name'),
+                  size: size,
+                  quantity: quantity,
+                  price: price
+              });
+          } else {
+              console.error("Please select a size.");
+          }
+      });
+  });
 });
