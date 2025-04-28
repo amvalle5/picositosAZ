@@ -139,7 +139,7 @@ body, nav, p{
 
 .product-grid img.candies, .dulceProducts img {
     width: 100%;
-    height: auto;
+    height: 500px;
     border-radius: 8px;
     margin: 0 auto 0.5rem;
     display: block;
