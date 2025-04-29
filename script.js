@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (itemsList) {
           updateCart();
         }
+        updateCartCountDisplay();
       }
     });
   });
@@ -90,6 +91,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
       subTotalSpan.textContent = "$0.00";
       totalSpan.textContent = "$0.00";
+      
+      updateCartCountDisplay();
       return;
     }
   
@@ -120,7 +123,9 @@ document.addEventListener("DOMContentLoaded", () => {
   
     subTotalSpan.textContent = `$${subtotal.toFixed(2)}`;
     totalSpan.textContent = `$${total.toFixed(2)}`;
-  }
+  
+    updateCartCountDisplay();
+  }  
   
 
   // If on cart page, initialize cart display
