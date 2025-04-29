@@ -36,7 +36,6 @@ header, footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
 }
 .navigation-bar ul {
     display: flex;
@@ -97,9 +96,11 @@ h1,h2,h3 {
 }
 
 .hero-text p{
-    text-align: center;
+    text-align: left;
     margin: 20px;
+    padding: 40px;
     font-weight: 450;
+    font-size: 20px;
 }
 
 body, nav, p{
@@ -227,7 +228,6 @@ body, nav, p{
 /* Footer Styles */
 footer {
     margin-top: 50px;
-    padding: 2rem 1rem;
     color: #fff;
 } 
 
@@ -244,7 +244,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 5px;
     flex: 1;
 }
 
@@ -263,6 +263,10 @@ footer {
     text-align: right;
     margin-top: 100px;
 }
+
+.footer-left p{
+    padding-bottom: 20px;
+}
  
 footer a {
     text-decoration: none;
@@ -279,7 +283,7 @@ footer ul li {
     margin-top: 50px;
 }
 
- #size-gushers, #quantity-gushers, #size-skittles, #quantity-skittles, #size-airheadExtreme,  #quantity-airheadExtreme, #size-peachRings, #quantity-peachRings, #size-nerdClusters, #quantity-nerdClusters, #size-spicyManguitos, #quantity-spicyManguitos, #size-gummyFresitas, #quantity-gummyFresitas, #size-sourPunchStraws, #quantity-sourPunchStraws, #size-gummyWorms, #quantity-gummyWorms, #size-sourPatchWatermelons, #quantity-sourPatchWatermelons, #size-sourCherries, #quantity-sourCherries {
+ #size-gushers, #quantity-gushers, #size-skittles, #quantity-skittles, #size-airheadExtreme,  #quantity-airheadExtreme, #size-peachRings, #quantity-peachRings, #size-nerdClusters, #quantity-nerdClusters, #size-spicyManguitos, #quantity-spicyManguitos, #size-gummyFresitas, #quantity-gummyFresitas, #size-sourPunchStraws, #quantity-sourPunchStraws, #size-gummyWorms, #quantity-gummyWorms, #size-sourPatchWatermelons, #quantity-sourPatchWatermelons, #size-sourCherries, #quantity-sourCherries, #size-candyApple, #quantity-candyApple {
     color: #ff004c;
     padding: 10px;
     font-size: 16px;
