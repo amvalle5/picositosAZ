@@ -61,6 +61,8 @@ header, footer {
 /* Hero Banner Styles */
 #hero-banner{
     background-image: url(images/newPicositosAZ.png);
+    border-top: 6px solid #69a286;
+    border-bottom: 10px dotted #fd5588;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
