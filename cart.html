@@ -32,34 +32,35 @@
 
     <main>
         <h1>Shopping Cart</h1>
+        <section id="cart" aria-live="polite">
+          <div>
+              <i class="fas fa-shopping-cart"></i>
+              <h3>Your Cart</h3>
+          </div>
+          <ul id="items">
+              <li id="cartMsg">Your Cart is Empty</li>
+          </ul>
       
-        <div id="empty-cart" class="empty-cart">
-          <p>Your cart is currently empty.</p>
-          <a href="dulces.html" class="continue-shopping">Continue Shopping</a>
-        </div>
+      <label for="shipping-method">Delivery Method:</label>
+      <select id="shipping-method">
+      <option value="pickup">Pickup (Free)</option>
+      <option value="shipping">Shipping ($5.00)</option>
+      </select>
       
-        <div id="cart-container" class="hidden">
-          <form id="cart-form">
-            <table>
-              <thead>
-                <tr>
-                  <th>Item</th>
-                  <th>Size</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
-                  <th>Subtotal</th>
-                  <th>Remove</th>
-                </tr>
-              </thead>
-              <tbody id="cart-body">
-                <!-- JS will fill this in -->
-              </tbody>
-            </table>
-            <div class="cart-actions">
-              <button type="submit">Checkout</button>
-            </div>
-          </form>
-        </div>
+      
+          <section id="cartTotal">
+              <h4 class="hidden">Cart Totals</h4>
+              <span>Sub-Total: </span>
+              <span id="subTotal">$0.00</span>
+              <span>Tax Rate: </span>
+              <span>8.5%</span>
+              <span>Shipping: </span>
+              <span>Flat $5.00</span>
+              <span>Cart Total: </span>
+              <span id="total">$0.00</span>
+              <button id="checkOut">Check Out</button>
+          </section>
+      </section>
     </main>
           
     <footer>

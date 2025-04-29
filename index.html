@@ -40,56 +40,59 @@
         <section id="featured-products">
             <h2>Popular Dulces</h2>
             <div class="product-grid">
-                <article class="product">
-                    <img class="candies" src="images/gushers.png">
+                <article class="product" data-id="gushers" data-name="Gushers">
+                    <img src="images/gushers.png">
                     <h3>Gushers</h3>
                     <p>A spicy and tangy twist on your favorite juicy-filled bites. A perfect mix of sweetness and heat!</p>
-                    <div class="product-footer">
-                        <label for="size-gushers">Size:</label>
-                        <select id="size-gushers" name="size">
-                            <option value="mini">Mini - $1.50</option>
-                            <option value="container">Container - $8</option>
-                            <option value="bag">Bag - $15</option>
-                        </select>
-
-                        <label for="quantity-gushers">Quantity:</label>
-                        <input type="number" id="quantity-gushers" name="quantity" min="1" value="1">
-                        <button type="submit">Add to Cart</button>
-                    </div>
-                </article>
-                <article class="product">
-                    <img class="candies" src="images/skittles.png">
+                    
+                    <label for="size-gushers">Size:</label>
+                    <select id="size-gushers" name="size" class="size">
+                      <option value="mini" data-price="1.50">Mini - $1.50</option>
+                      <option value="container" data-price="8.00">Container - $8</option>
+                      <option value="bag" data-price="15.00">Bag - $15</option>
+                    </select>
+                  
+                    <label for="quantity-gushers">Quantity:</label>
+                    <input type="number" id="quantity-gushers" name="quantity" class="quantity" min="1" value="1" required>
+                  
+                    <input type="checkbox" id="check-gushers" class="add-to-cart"> 
+                    <label for="check-gushers"><span class="add-to-cart-label">Add to Cart</span></label>
+                  </article>
+                  <article class="product" data-id="skittles" data-name="Skittles">
+                    <img src="images/skittles.png">
                     <h3>Skittles</h3>
-                    <p>Taste the rainbow… with a kick! These chewy classics get a bold, spicy upgrade.</p>
-                    <div class="product-footer">
-                        <label for="size-skittles">Size:</label>
-                        <select id="size-skittles" name="size">
-                            <option value="mini">Mini - $1.50</option>
-                            <option value="container">Container - $8</option>
-                            <option value="bag">Bag - $15</option>
-                        </select>
+                    <p>Taste the rainbow with a fiery kick! Sweet, sour, and spicy goodness in every handful.</p>
+                    
+                    <label for="size-skittles">Size:</label>
+                    <select id="size-skittles" name="size" class="size">
+                        <option value="mini" data-price="1.50">Mini - $1.50</option>
+                        <option value="container" data-price="8.00">Container - $8</option>
+                        <option value="bag" data-price="15.00">Bag - $15</option>
+                    </select>
 
-                        <label for="quantity-skittles">Quantity:</label>
-                        <input type="number" id="quantity-skittles" name="quantity" min="1" value="1">
-                        <button type="submit">Add to Cart</button>
-                    </div>
+                    <label for="quantity-skittles">Quantity:</label>
+                    <input type="number" id="quantity-skittles" name="quantity" class="quantity" min="1" value="1">
+                    
+                    <input type ="checkbox" id="check-skittles" class="add-to-cart">
+                    <label for="check-skittles"><span class="add-to-cart-label">Add to Cart</span></label>
                 </article>
-                <article class="product">
-                    <img class="candies" src="images/airheadExtreme.png">
+                <article class="product" data-id="airheadExtreme" data-name="Airhead Extreme">
+                    <img src="images/airheadExtreme.png">
                     <h3>Airhead Xtremes</h3>
                     <p>A chewy, fruity, and spicy explosion in every bite. Sweet, sour, and tangy fun!</p>
-                    <div class="product-footer">
-                        <label for="size-airheadExtreme">Size:</label>
-                        <select id="size-airheadExtreme" name="size">
-                            <option value="mini">Mini - $1.50</option>
-                            <option value="container">Container - $8</option>
-                            <option value="bag">Bag - $15</option>
-                        </select>
+                    
+                    <label for="size-airheadExtreme">Size:</label>
+                    <select id="size-airheadExtreme" name="size" class="size">
+                        <option value="mini" data-price="1.50">Mini - $1.50</option>
+                        <option value="container" data-price="8.00">Container - $8</option>
+                        <option value="bag" data-price="15.00">Bag - $15</option>
+                    </select>
 
-                        <label for="quantity-airheadExtreme">Quantity:</label>
-                        <input type="number" id="quantity-airheadExtreme" name="quantity" min="1" value="1">
-                        <button type="submit">Add to Cart</button>
-                    </div>
+                    <label for="quantity-airheadExtreme">Quantity:</label>
+                    <input type="number" id="quantity-airheadExtreme" name="quantity" class="quantity" min="1" value="1">
+                    
+                    <input type ="checkbox" id="check-airheadExtreme" class="add-to-cart">
+                    <label for="check-airheadExtreme"><span class="add-to-cart-label">Add to Cart</span></label>
                 </article>
             </div>
             <a href="dulces.html" class="view-all">View All Our Dulces</a>

@@ -107,7 +107,7 @@
                     <input type ="checkbox" id="check-peachRings" class="add-to-cart">
                     <label for="check-peachRings"><span class="add-to-cart-label">Add to Cart</span></label>
                 </article>
-                <article class="product">
+                <article class="product" data-id="nerdClusters" data-name="Nerd Clusters">
                     <img src="images/nerdClusters.png">
                     <h3>Nerd Clusters</h3>
                     <p>Crunchy, chewy, and covered in tangy chamoy spice. The ultimate candy combo!</p>
@@ -179,7 +179,7 @@
                     <input type ="checkbox" id="check-sourPunchStraws" class="add-to-cart">
                     <label for="check-sourPunchStraws"><span class="add-to-cart-label">Add to Cart</span></label>
                 </article>
-                <article class="product" data-id="gummyWorms" data-name="Gummy Worms">
+                <article class="product" data-id="gummyWorms" data-name="Sour Gummy Worms">
                     <img src="images/gummyWorms.png">
                     <h3>Sour Gummy Worms</h3>
                     <p>Classic gummy worms with a twist! A spicy-sour combo that bites back.</p>
@@ -197,7 +197,7 @@
                     <input type ="checkbox" id="check-gummyWorms" class="add-to-cart">
                     <label for="check-gummyWorms"><span class="add-to-cart-label">Add to Cart</span></label>
                 </article>
-                <article class="product" data-id="sourPatchWatermelons" data-name="Sour PatchWatermelons">
+                <article class="product" data-id="sourPatchWatermelons" data-name="Sour Patch Watermelons">
                     <img src="images/sourPatchWatermelons.png">
                     <h3>Sour Patch Watermelons</h3>
                     <p>Sweet, sour, and spicy watermelon-flavored gummies for an addictive treat.</p>
@@ -233,37 +233,6 @@
                     <input type ="checkbox" id="check-sourCherries" class="add-to-cart">
                     <label for="check-sourCherries"><span class="add-to-cart-label">Add to Cart</span></label>
                 </article>
-                
-                <!-- Cart Section -->
-                <section id="cart" aria-live="polite">
-                    <div>
-                        <i class="fas fa-shopping-cart"></i>
-                        <h3>Your Cart</h3>
-                    </div>
-                    <ul id="items">
-                        <li id="cartMsg">Your Cart is Empty</li>
-                    </ul>
-                
-                <label for="shipping-method">Delivery Method:</label>
-                <select id="shipping-method">
-                <option value="pickup">Pickup (Free)</option>
-                <option value="shipping">Shipping ($5.00)</option>
-                </select>
-                
-                
-                    <section id="cartTotal">
-                        <h4 class="hidden">Cart Totals</h4>
-                        <span>Sub-Total: </span>
-                        <span id="subTotal">$0.00</span>
-                        <span>Tax Rate: </span>
-                        <span>8.5%</span>
-                        <span>Shipping: </span>
-                        <span>Flat $5.00</span>
-                        <span>Cart Total: </span>
-                        <span id="total">$0.00</span>
-                        <button id="checkOut">Check Out</button>
-                    </section>
-                </section>
             </div>
         </section>
     </main>
