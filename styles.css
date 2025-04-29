@@ -36,6 +36,7 @@ header, footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 30px;
 }
 .navigation-bar ul {
     display: flex;
@@ -229,6 +230,8 @@ body, nav, p{
 footer {
     margin-top: 50px;
     color: #fff;
+    padding: 1px 15px;
+    border-top: 6px solid #69a286;
 } 
 
 .footer-content {
@@ -400,6 +403,23 @@ textarea{
 }
 
 /* Shopping Cart */
+.cart-link {
+    position: relative;
+    display: inline-block;
+  }
+  
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -15px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    display: none;
+}
+  
 input.add-to-cart {
     display: none;
 }

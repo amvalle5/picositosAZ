@@ -146,7 +146,27 @@ document.addEventListener("DOMContentLoaded", () => {
       toast.classList.remove("show");
       setTimeout(() => {
         toast.remove();
-      }, 500); // Ensure it disappears after animation
+      }, 500); 
     }, 3000);
   }
+
+  function getCartItemCount() {
+    const cart = JSON.parse(localStorage.getItem('cartItems')) || [];
+    let total = 0;
+    cart.forEach(item => {
+      total += parseInt(item.quantity);
+    });
+    return total;
+  }
+  
+  function updateCartCountDisplay() {
+    const countEl = document.querySelector('.cart-count');
+    const itemCount = getCartItemCount();
+    if (countEl) {
+      countEl.textContent = itemCount;
+      countEl.style.display = itemCount > 0 ? 'inline-block' : 'none';
+    }
+  }
+  
+  updateCartCountDisplay();  
 });
