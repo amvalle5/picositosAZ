@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <a href="#main" id="skip">Skip to Main Content</a>
@@ -31,11 +32,11 @@
     </header>
 
     <main>
-        <h1>Shopping Cart</h1>
+        <h1 class="shoppingCart">Shopping Cart</h1>
         <section id="cart" aria-live="polite">
-          <div>
+          <div class="cart-header">
               <i class="fas fa-shopping-cart"></i>
-              <h3>Your Cart</h3>
+              <h2>Your Cart</h2>
           </div>
           <ul id="items">
               <li id="cartMsg">Your Cart is Empty</li>
@@ -48,18 +49,31 @@
       </select>
       
       
-          <section id="cartTotal">
-              <h4 class="hidden">Cart Totals</h4>
-              <span>Sub-Total: </span>
-              <span id="subTotal">$0.00</span>
-              <span>Tax Rate: </span>
-              <span>8.5%</span>
-              <span>Shipping: </span>
-              <span>Flat $5.00</span>
-              <span>Cart Total: </span>
-              <span id="total">$0.00</span>
-              <button id="checkOut">Check Out</button>
-          </section>
+      <section id="cartTotal">
+        <h4 class="hidden">Cart Totals</h4>
+      
+        <div class="cart-row">
+          <span>Sub-Total: </span>
+          <span id="subTotal">$0.00</span>
+        </div>
+      
+        <div class="cart-row">
+          <span>Tax Rate: </span>
+          <span>5.6%</span>
+        </div>
+      
+        <div class="cart-row">
+          <span>Shipping: </span>
+          <span>$5.00</span>
+        </div>
+      
+        <div class="cart-row">
+          <span>Cart Total: </span>
+          <span id="total">$0.00</span>
+        </div>
+      
+        <button id="checkOut">Check Out</button>
+      </section>      
       </section>
     </main>
           

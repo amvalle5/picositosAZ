@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const removeBtn = document.createElement("button");
       removeBtn.textContent = "Remove";
-      removeBtn.style.marginLeft = "10px";
+      removeBtn.classList.add("remove-button");
       removeBtn.addEventListener("click", () => {
         cartItems.splice(index, 1);
         localStorage.setItem('cartItems', JSON.stringify(cartItems));

@@ -394,13 +394,11 @@ textarea{
 }
 
 /* Shopping Cart */
-/* Hide the default checkbox */
 .add-to-cart {
     display: none;
   }
-  
-  /* Style the label to look like a button */
-  .add-to-cart-label {
+
+.add-to-cart-label {
     background-color: #fd5588;  
     color: white;    
     padding: 10px 20px;
@@ -413,16 +411,139 @@ textarea{
     text-align: center; 
 }
  
-  /* Add a hover effect for the label */
-  .add-to-cart-label:hover {
+.add-to-cart-label:hover {
     background-color: #d94371;
   }
   
-  /* Optional: Add an active state for a "pressed" effect */
-  .add-to-cart-label:active {
+.add-to-cart-label:active {
     background-color: #c1456d; 
   }
+
+.shoppingCart{
+    visibility: hidden;
+}
+
+#cart{
+    text-align: center;
+}
+
+#cartTotal span {
+    display: inline-block;
+    width: 120px;
+    font-weight: 600;
+    color: #444;
+  }
   
+  #cartTotal #total {
+    font-size: 1.4rem;
+    color: #fd5588;
+  }
+  
+.cart-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart h2{
+    color: #fd5588;
+}
+
+.cart-header i {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: #fd5588;
+}
+
+#shipping-method {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    background-color: #fff;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    width: 250px;
+    transition: border-color 0.3s ease;
+  }
+  
+  #shipping-method:hover {
+    border-color: #fd5588;
+  }
+  
+  label[for="shipping-method"] {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+
+.cart-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    
+  }
+
+#cartTotal{
+    background-color: #fff3f7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+#cartTotal h4{
+    font-size: 20px;
+  }
+
+ #items{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 25px;
+  }
+
+  #items li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.remove-button{
+    margin-left: 10px;
+  background-color: transparent;
+  color: #fd5588;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.remove-button:hover {
+    color: red;
+  }
+
+#checkOut{
+    background-color: #fd5588;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+}
+
+#checkOut:hover{
+    background-color: #69a286;
+}
 
 /* Toast Notification Styles */
 .toast {
@@ -446,4 +567,3 @@ textarea{
     opacity: 1;
     visibility: visible;
   }
-  
