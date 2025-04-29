@@ -61,7 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
         this.checked = false;
-        alert(`${name} added to cart!`);
+
+        // Show the toast notification
+        showToast(`${name} added to cart!`);
 
         // If on cart page, update the visible cart
         if (itemsList) {
@@ -121,5 +123,27 @@ document.addEventListener("DOMContentLoaded", () => {
   // If on cart page, initialize cart display
   if (itemsList) {
     updateCart();
+  }
+
+  // Function to show the toast notification
+  function showToast(message) {
+    const toast = document.createElement("div");
+    toast.classList.add("toast");
+    toast.textContent = message;
+    
+    document.body.appendChild(toast);
+
+    // Trigger the show animation
+    setTimeout(() => {
+      toast.classList.add("show");
+    }, 10);
+
+    // Remove the toast after 3 seconds
+    setTimeout(() => {
+      toast.classList.remove("show");
+      setTimeout(() => {
+        toast.remove();
+      }, 500); // Ensure it disappears after animation
+    }, 3000);
   }
 });
