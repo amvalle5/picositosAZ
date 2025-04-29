@@ -81,22 +81,24 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function to update the cart display
   function updateCart() {
     itemsList.innerHTML = "";
-
+  
     if (cartItems.length === 0) {
-      cartMsg.style.display = "list-item";
+      const emptyMessage = document.createElement("li");
+      emptyMessage.id = "cartMsg";
+      emptyMessage.textContent = "Your Cart is Empty";
+      itemsList.appendChild(emptyMessage);
+  
       subTotalSpan.textContent = "$0.00";
       totalSpan.textContent = "$0.00";
       return;
-    } else {
-      cartMsg.style.display = "none";
     }
-
+  
     let subtotal = 0;
-
+  
     cartItems.forEach((item, index) => {
       const li = document.createElement("li");
       li.textContent = `${item.name} (${item.size}) x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`;
-
+  
       const removeBtn = document.createElement("button");
       removeBtn.textContent = "Remove";
       removeBtn.classList.add("remove-button");
@@ -105,20 +107,21 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
         updateCart();
       });
-
+  
       li.appendChild(removeBtn);
       itemsList.appendChild(li);
-
+  
       subtotal += item.price * item.quantity;
     });
-
+  
     const tax = subtotal * TAX_RATE;
     const shipping = shippingSelect && shippingSelect.value === "shipping" ? SHIPPING_COST : 0;
     const total = subtotal + tax + shipping;
-
+  
     subTotalSpan.textContent = `$${subtotal.toFixed(2)}`;
     totalSpan.textContent = `$${total.toFixed(2)}`;
   }
+  
 
   // If on cart page, initialize cart display
   if (itemsList) {
