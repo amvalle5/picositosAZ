@@ -394,18 +394,35 @@ textarea{
 }
 
 /* Shopping Cart */
-.hidden{
+/* Hide the default checkbox */
+.add-to-cart {
     display: none;
-}
-
-.empty-cart{
-    text-align: center;
-    padding: 20px;
-    font-size: 1.2em;
-    color: #222;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
+  }
+  
+  /* Style the label to look like a button */
+  .add-to-cart-label {
+    background-color: hotpink;  /* Green background */
+    color: white;               /* White text */
+    padding: 10px 20px;         /* Padding for button-like appearance */
+    border: none;               /* Remove borders */
+    border-radius: 5px;         /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;  /* Smooth background color change */
+  }
+  
+  /* Change the background color when the checkbox is checked */
+  .add-to-cart:checked + .add-to-cart-label {
+    background-color: #45a049; /* Darker green when checked */
+  }
+  
+  /* Add a hover effect for the label */
+  .add-to-cart-label:hover {
+    background-color: black;  /* Dark green on hover */
+  }
+  
+  /* Optional: Add an active state for a "pressed" effect */
+  .add-to-cart-label:active {
+    background-color: #388E3C;  /* Even darker green when the button is clicked */
+  }
+  
 
