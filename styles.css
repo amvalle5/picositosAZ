@@ -639,20 +639,56 @@ input.add-to-cart {
   
   /* Small Tablets / Large Phones */
   @media screen and (max-width: 768px) {
-    nav {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    header {
-      text-align: center;
-    }
-  
-    .product-grid img, .dulceProducts img{
-      width: 100%;
-      height: 300px;
-    }
-  }
+        nav {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      
+        header {
+          text-align: center;
+        }
+      
+        .product-grid img, .dulceProducts img {
+          width: 100%;
+          height: auto;
+        }
+      
+        .product-grid {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      
+        .footer-content {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 20px;
+        }
+      
+        .footer-left,
+        .footer-center,
+        .footer-right {
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          margin-top: 0;
+        }
+      
+        .footer-right {
+          margin-top: 0;
+        }
+      
+        .footer-left p {
+          margin-top: 10px;
+          font-size: 0.85rem;
+        }
+      
+        footer ul li {
+          margin-top: 10px;
+        }
+      }
+      
   
   /* Mobile (small screens) */
   @media screen and (max-width: 480px) {
@@ -665,8 +701,8 @@ input.add-to-cart {
       font-size: 0.9rem;
     }
     .product-grid img, .dulceProducts img{
-      width: 50%;
-      height: 300px;   
+      width: 100%;
+      height: auto;   
     }
     .product-grid{
       display:flex;
