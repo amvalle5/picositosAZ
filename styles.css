@@ -60,34 +60,37 @@ header, footer {
 
 /* Hero Banner Styles */
 #hero-banner{
-    background-image: url(images/newPicositosAZ.png);
     border-top: 6px solid #69a286;
     border-bottom: 10px dotted #fd5588;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     width: 100vw;
     height: 70vh;
     display: flex;
-    text-align: center;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 20px;
     box-sizing: border-box;
+    background-color: #fff; /* or whatever background you want */
+}
+
+#hero-banner img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 h1{
     margin-top: 40px;
-    font-size: 75px;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     text-decoration: solid;
 }
 
 h2{
-    font-size: 40px;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 h3{
-    font-size: 30px;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
 }
 
 h1,h2,h3 {
@@ -97,11 +100,10 @@ h1,h2,h3 {
 }
 
 .hero-text p{
-    text-align: left;
     margin: 20px;
-    padding: 40px;
+    padding: 10px;
     font-weight: 450;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 body, nav, p{
@@ -110,7 +112,7 @@ body, nav, p{
 
 /* Products */
 #featured-products, .dulceProducts{
-    padding: 2rem;
+    padding: 70px 5px;
     text-align: center;
 }
 
@@ -189,11 +191,13 @@ body, nav, p{
     display: inline-block;
     text-decoration: none;
     padding: 12px 24px;
-    margin-top: 20px;
-    background-color: #ff004c;
+    margin-top: 35px;
+    background-color: #fd5588;
     color: #fff;
     border-radius: 0.5rem;
     font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 2px 6px #000;
 }
 
 /* Testimonals */
@@ -214,7 +218,7 @@ body, nav, p{
     color: #fff;
     padding: 2rem;
     border-radius: 0.5rem;
-    box-shadow: 0 2px 6px rgb(0, 0, 0);
+    box-shadow: 0 2px 6px #000;
     font-style: italic;
 }
 
@@ -306,7 +310,7 @@ label {
     padding: 20px;
     border-radius: 10px;
     background-color: #69a286;
-    box-shadow: 0 4px 6px ;
+    box-shadow: 0 4px 6px #000;
 }
 
 .faq-title {
@@ -377,7 +381,7 @@ input{
     font-size: 1em;
     padding: 0.25em 0.5em;
     border: 2px solid  #69a286;
-    height: 1.5em;
+    height: 2.5em;
 }
 
 textarea{
