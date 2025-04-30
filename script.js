@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+  window.updateCart = updateCart;
+  window.updateCartCountDisplay = updateCartCountDisplay;
+  
   // FAQ Logic
   const questions = document.querySelectorAll(".faq-question");
 
@@ -55,7 +58,12 @@ document.addEventListener("DOMContentLoaded", () => {
           price,
         };
 
-        cartItems.push(item);
+        const existingItem = cartItems.find(i => i.id === id && i.size === size);
+        if (existingItem) {
+          existingItem.quantity += quantity;
+        } else {
+          cartItems.push(item);
+        }
 
         // Save updated cart to localStorage
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
@@ -174,4 +182,30 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   updateCartCountDisplay();  
+
+
+  // Simulate cart items (replace this with your actual cart logic)
+  document.getElementById("checkOut").addEventListener("click", function () {
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  
+    const cartItemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+  
+    if (cartItemCount > 0) {
+      const popup = document.getElementById("orderPopup");
+      popup.classList.add("show");
+  
+      setTimeout(() => {
+        popup.classList.remove("show");
+      }, 3000);
+    }
+  
+    //   localStorage.removeItem('cartItems');
+    //   cartItems = []; // 💥 CLEAR in-memory cart array too
+    //   updateCart();   // ✅ refresh cart UI
+    //   updateCartCountDisplay();
+    // } else {
+    //   alert("Your cart is empty!");
+    // }
+   });
+  
 });
