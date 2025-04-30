@@ -274,6 +274,11 @@ footer {
 .footer-left p{
     padding-bottom: 20px;
 }
+
+.footer-copy{
+    margin-bottom: 15px;
+    padding-left: 45px;
+}
  
 footer a {
     text-decoration: none;
@@ -620,3 +625,95 @@ input.add-to-cart {
     opacity: 1;
     visibility: visible;
   }
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    nav {
+      gap: 1rem;
+    }
+  
+    header {
+      padding: 15px;
+    }
+  }
+  
+  /* Small Tablets / Large Phones */
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header {
+      text-align: center;
+    }
+  
+    .product-grid img, .dulceProducts img{
+      width: 100%;
+      height: 300px;
+    }
+  }
+  
+  /* Mobile (small screens) */
+  @media screen and (max-width: 480px) {
+    header {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    .navigation-bar a {
+      font-size: 0.9rem;
+    }
+    .product-grid img, .dulceProducts img{
+      width: 50%;
+      height: 300px;   
+    }
+    .product-grid{
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+    }  
+
+    .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        width: 100%;
+        margin: 10px 0;
+        flex: unset;
+    }
+
+    .footer-left {
+        align-items: center;
+    }
+
+    .footer-copy {
+        margin-top: 20px;
+        font-size: 0.85rem;
+        color: #fff;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    footer ul li {
+        margin: 8px 0;
+    }
+
+    .footer-right {
+        justify-content: center;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    footer a {
+        font-size: 0.95rem;
+    }
+}
+
+  
+
