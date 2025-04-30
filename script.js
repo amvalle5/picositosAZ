@@ -184,28 +184,27 @@ document.addEventListener("DOMContentLoaded", () => {
   updateCartCountDisplay();  
 
 
-  // Simulate cart items (replace this with your actual cart logic)
+  //Checkout message and resetting of cart
   document.getElementById("checkOut").addEventListener("click", function () {
-    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-  
-    const cartItemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
-  
-    if (cartItemCount > 0) {
+    if (cartItems.length > 0) {
       const popup = document.getElementById("orderPopup");
       popup.classList.add("show");
   
+      // ✅ Clear cart: both in-memory and in localStorage
+      cartItems.length = 0;
+      localStorage.removeItem('cartItems');
+  
+      // ✅ Immediately update UI
+      updateCart();              
+      updateCartCountDisplay();  
+  
+      // Hide popup after 3 seconds
       setTimeout(() => {
         popup.classList.remove("show");
       }, 3000);
+    } else {
+      alert("Your cart is empty!");
     }
-  
-    //   localStorage.removeItem('cartItems');
-    //   cartItems = []; // 💥 CLEAR in-memory cart array too
-    //   updateCart();   // ✅ refresh cart UI
-    //   updateCartCountDisplay();
-    // } else {
-    //   alert("Your cart is empty!");
-    // }
-   });
+  });  
   
 });
