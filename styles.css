@@ -649,6 +649,10 @@ input.add-to-cart {
         padding: 2rem;
     }
 
+    .dulceProducts img{
+        height: 300px;
+    }
+    
     .testimonials-grid{
         display: flex;
         flex-direction: column;
@@ -688,8 +692,11 @@ input.add-to-cart {
     .dulceProducts {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
-        height: auto;
-        }
+    }
+
+     .dulceProducts img{
+        height: 300px;
+     }   
       
     .footer-content {
         flex-direction: column;
@@ -716,6 +723,14 @@ input.add-to-cart {
       
     footer ul li {
         margin-top: 10px;
+    }
+
+    .footer-copy {
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: #fff;
+        margin-bottom: 10px;
+        text-align: center;
     }
 
     .faq-section {
