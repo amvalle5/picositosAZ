@@ -857,45 +857,24 @@ input.add-to-cart {
     }
       
     #contact {
-        padding: 1.5rem 1rem;
-        text-align: center;
-        width: 90%;
+        padding: 1rem;
       }
-      
-    #contact h2 {
-        font-size: 1.2rem;
-        text-align: center;
+    
+      form#newContact {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
       }
-      
-    #contact p {
-        font-size: 0.95rem;
+    
+      form#newContact label,
+      form#newContact input,
+      form#newContact textarea,
+      form#newContact button {
+        width: 100%;
+        box-sizing: border-box;
         margin-bottom: 1rem;
       }
-      
-    form label {
-        display: block;
-        font-size: 0.95rem;
-        margin-top: 1rem;
-        text-align: left;
-      }
-      
-    form input, form textarea {
-        width: 90%;
-        padding: 0.5rem;
-        font-size: 0.95rem;
-        margin-top: 0.5rem;
-    }
-    
-    form textarea {
-        margin-right: 90px;
-    }
-
-
-    form button {
-        display: inline-block;
-        margin: 0 190px;
-        font-size: 1rem;
-    }
 
     .faq-section{
         width: 90%;
