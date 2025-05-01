@@ -79,6 +79,11 @@ header, footer {
     object-fit: contain;
 }
 
+#visually-hidden{
+    display: none;
+}
+      
+
 h1{
     margin-top: 40px;
     font-size: clamp(2rem, 5vw, 3.5rem);
