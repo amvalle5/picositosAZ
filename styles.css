@@ -781,11 +781,13 @@ input.add-to-cart {
     }
   
     .navigation-bar a {
-      font-size: 0.9rem;
+      font-size: 0.7rem;
       text-align: center;
       display: block;
-      margin: 10px 1px;
+      margin: 0 0.2rem;
+      padding-left: 13px;
     }
+
     .product-grid img, .dulceProducts img{
       width: 100%;
       height: auto;   
