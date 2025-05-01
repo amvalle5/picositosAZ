@@ -652,65 +652,82 @@ input.add-to-cart {
   
   /* Small Tablets / Large Phones */
   @media screen and (max-width: 768px) {
-        nav {
-          flex-direction: column;
-          align-items: flex-start;
-        }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
       
-        header {
-          text-align: center;
-        }
+    header {
+        text-align: center;
+    }
       
-        .product-grid img {
-            height: 250px;
-            object-fit: cover;
-        }
+    .product-grid img {
+        height: 250px;
+        object-fit: cover;
+    }
       
-        .product-grid {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-        }
+    .product-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-        .dulceProducts {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-            height: auto;
-          }
-      
-        .footer-content {
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          gap: 20px;
+    .dulceProducts {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        height: auto;
         }
       
-        .footer-left,
-        .footer-center,
-        .footer-right {
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          margin-top: 0;
-        }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
       
-        .footer-right {
-          margin-top: 0;
-        }
+    .footer-left, .footer-center, .footer-right {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+    }
       
-        .footer-left p {
-          margin-top: 10px;
-          font-size: 0.85rem;
-        }
+    .footer-right {
+        margin-top: 0;
+    }
       
-        footer ul li {
-          margin-top: 10px;
-        }
-      }
+    .footer-left p {
+        margin-top: 10px;
+        font-size: 0.85rem;
+    }
       
-  
-  /* Mobile (small screens) */
-  @media screen and (max-width: 480px) {
+    footer ul li {
+        margin-top: 10px;
+    }
+
+    .faq-section {
+        width: 600px;
+        padding: 1.5rem;
+    }
+      
+    .faq-title {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+      
+    .faq-question {
+    font-size: 1rem;
+    padding: 0.75rem;
+    }
+      
+    .faq-answer p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    }
+} 
+
+/* Mobile (small screens) */
+@media screen and (max-width: 480px) {
     header {
       font-size: 0.9rem;
       padding: 10px;
@@ -774,7 +791,62 @@ input.add-to-cart {
     footer a {
         font-size: 0.95rem;
     }
+    .faq-title {
+        font-size: 1.1rem;
+    }
+      
+    .faq-question {
+        font-size: 0.95rem;
+        padding: 0.65rem;
+    }
+      
+    .faq-answer p {
+        font-size: 0.9rem;
+    }
+      
+    #contact {
+        padding: 1.5rem 1rem;
+        text-align: center;
+      }
+      
+    #contact h2 {
+        font-size: 1.2rem;
+      }
+      
+    #contact p {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+      }
+      
+    form label {
+        display: block;
+        font-size: 0.95rem;
+        margin-top: 1rem;
+        text-align: left;
+      }
+      
+    form input, form textarea {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 0.95rem;
+        margin-top: 0.5rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      
+    form button {
+        margin-top: 1rem;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        background-color: #ff5e57;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
 }
+
 
   
 
