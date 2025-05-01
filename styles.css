@@ -277,7 +277,8 @@ footer {
 
 .footer-copy{
     margin-bottom: 15px;
-    padding-left: 45px;
+
+    text-align: center;
 }
  
 footer a {
