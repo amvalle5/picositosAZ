@@ -636,6 +636,18 @@ input.add-to-cart {
     header {
       padding: 15px;
     }
+
+    .product-grid img {
+        width: 100%;
+        height: auto;
+      }
+
+    .dulceProducts {
+         display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
   }
   
   /* Small Tablets / Large Phones */
@@ -649,9 +661,9 @@ input.add-to-cart {
           text-align: center;
         }
       
-        .product-grid img, .dulceProducts img {
-          width: 100%;
-          height: auto;
+        .product-grid img {
+            height: 250px;
+            object-fit: cover;
         }
       
         .product-grid {
@@ -659,6 +671,12 @@ input.add-to-cart {
           flex-direction: column;
           align-items: flex-start;
         }
+
+        .dulceProducts {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            height: auto;
+          }
       
         .footer-content {
           flex-direction: column;
@@ -710,6 +728,12 @@ input.add-to-cart {
       flex-direction:column;
       align-items:flex-start;
     }  
+
+    .dulceProducts {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
 
     .footer-content {
     flex-direction: column;
