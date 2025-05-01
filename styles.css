@@ -667,6 +667,10 @@ input.add-to-cart {
     .dulceProducts img{
         height: 300px;
     }
+
+    .dulceProducts h3{
+        font-size: 1.1rem;
+     }
     
     .testimonials-grid{
         display: flex;
@@ -716,6 +720,10 @@ input.add-to-cart {
      .dulceProducts img{
         height: 300px;
      }   
+
+     .dulceProducts h3{
+        font-size: 1.3rem;
+     }
       
     .footer-content {
         flex-direction: column;
