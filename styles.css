@@ -115,6 +115,9 @@ body, nav, p{
     font-family: 'Raleway', sans-serif;
 }
 
+.visually-hidden{
+    display: none;
+}
 /* Products */
 #featured-products, .dulceProducts{
     padding: 20px 5px;
