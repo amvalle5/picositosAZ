@@ -632,6 +632,13 @@ input.add-to-cart {
     nav {
       gap: 1rem;
     }
+
+    .navigation-bar a {
+        font-size: 1.1rem;
+        text-align: center;
+        display: block;
+        margin: 10px 1px;
+    }
   
     header {
       padding: 15px;
@@ -666,9 +673,13 @@ input.add-to-cart {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .navigation-bar a {
         font-size: 1.1rem;
-      }
+        text-align: center;
+        display: block;
+        margin: 10px 1px;
+    }
       
     header {
         text-align: center;
@@ -763,6 +774,9 @@ input.add-to-cart {
   
     .navigation-bar a {
       font-size: 0.9rem;
+      text-align: center;
+      display: block;
+      margin: 10px 1px;
     }
     .product-grid img, .dulceProducts img{
       width: 100%;
@@ -835,10 +849,12 @@ input.add-to-cart {
     #contact {
         padding: 1.5rem 1rem;
         text-align: center;
+        width: 90%;
       }
       
     #contact h2 {
         font-size: 1.2rem;
+        text-align: center;
       }
       
     #contact p {
@@ -854,24 +870,26 @@ input.add-to-cart {
       }
       
     form input, form textarea {
-        width: 100%;
+        width: 90%;
         padding: 0.5rem;
         font-size: 0.95rem;
         margin-top: 0.5rem;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-      }
-      
+    }
+    
+    form textarea {
+        margin-right: 90px;
+    }
+
+
     form button {
-        margin-top: 1rem;
-        padding: 0.75rem 1rem;
+        display: inline-block;
+        margin: 0 190px;
         font-size: 1rem;
-        background-color: #ff5e57;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
+    }
+
+    .faq-section{
+        width: 90%;
+    }
       
 }
 
