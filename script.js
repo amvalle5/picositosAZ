@@ -185,26 +185,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   //Checkout message and resetting of cart
-  document.getElementById("checkOut").addEventListener("click", function () {
+  // document.getElementById("checkOut").addEventListener("click", function () {
+  //   if (cartItems.length > 0) {
+  //     const popup = document.getElementById("orderPopup");
+  //     popup.classList.add("show");
+  
+  //     // ✅ Clear cart: both in-memory and in localStorage
+  //     cartItems.length = 0;
+  //     localStorage.removeItem('cartItems');
+  
+  //     // ✅ Immediately update UI
+  //     updateCart();              
+  //     updateCartCountDisplay();  
+  
+  //     // Hide popup after 3 seconds
+  //     setTimeout(() => {
+  //       popup.classList.remove("show");
+  //     }, 3000);
+  //   } else {
+  //     alert("Your cart is empty!");
+  //   }
+  // });  
+  const checkOutBtn = document.getElementById("checkOut");
+
+if (checkOutBtn) {
+  checkOutBtn.addEventListener("click", function () {
     if (cartItems.length > 0) {
       const popup = document.getElementById("orderPopup");
       popup.classList.add("show");
-  
-      // ✅ Clear cart: both in-memory and in localStorage
+
       cartItems.length = 0;
       localStorage.removeItem('cartItems');
-  
-      // ✅ Immediately update UI
-      updateCart();              
-      updateCartCountDisplay();  
-  
-      // Hide popup after 3 seconds
+
+      updateCart();
+      updateCartCountDisplay();
+
       setTimeout(() => {
         popup.classList.remove("show");
       }, 3000);
     } else {
       alert("Your cart is empty!");
     }
-  });  
+  });
+}
+
   
 });
